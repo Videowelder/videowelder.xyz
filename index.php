@@ -8,11 +8,11 @@
 	padding: 0px 0px 0px 0px;
 	cursor:url("/files/mouse.png"), auto;
 	-webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -webkit-user-drag: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 	user-drag:none;
 }
@@ -28,13 +28,13 @@ html {
 }
 
 @font-face {
-    font-family: Subfont;
-    src: url(/files/pixel.ttf);
+	font-family: Subfont;
+	src: url(/files/pixel.ttf);
 }
 
 @font-face {
-    font-family: Mainfont;
-    src: url(/files/cmd.ttf);
+	font-family: Mainfont;
+	src: url(/files/cmd.ttf);
 }
 
 div.main_text {
@@ -272,37 +272,33 @@ div.navbar p {
 	font-size: 110%;
 }
 
-	</style>
+</style>
 </head>
 <body>
-<div class="navbar">
-<p class="navbar_selected">Home</p>
-<span>~</span>
-<a href="/Crowtel">
-	<div>Crowtel</div>
-</a>
-<a href="/DATA">
-	<div>DATA</div>
-</a>
-<a href="/Projects">
-	<div>Projects</div>
-</a>
-<a href="/About">
-	<div>About</div>
-</a>
-</div>
+	<div class="navbar">
+		<p class="navbar_selected">Home</p>
+		<span>~</span>
+		<a href="/Crowtel">
+			<div>Crowtel</div>
+		</a>
+		<a href="/DATA">
+			<div>DATA</div>
+		</a>
+		<a href="/Projects">
+			<div>Projects</div>
+		</a>
+		<a href="/About">
+			<div>About</div>
+		</a>
+	</div>
 	<div class="main_page">
-		<div class="section_header">
-			It works!
-			</div>
+		<div class="section_header">It works!</div>
 		<div class="main_text">
 			<p align="middle">Thanks for testing! See you tomorrow!</p>
 			<img src="/files/vw_logo.png" alt="Videowelder Bird Emblem">
 		</div>
 		<div class="sub_text">
-		<p align="middle">
-		Links:
-		</p>
+			<p align="middle">Links:</p>
 		</div>
 		<div class="sub_text">
 			<p align="middle">
@@ -311,10 +307,8 @@ div.navbar p {
 			<a href="https://www.instagram.com/video_welder/">Instagram</a>
 			<a href="https://twitter.com/vunkmeister">Twitter</a>
 			</p>
-			</div>
-		<div class="section_header_red">
-		Have A Nice Day!
 		</div>
+		<div class="section_header_red">Have A Nice Day!</div>
 	</div>
-	</body>
+</body>
 </html>
