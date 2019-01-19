@@ -1,0 +1,346 @@
+using System;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        public static char Frequency;
+
+        public static int ToneMIX;
+
+        public static string Set;
+        public static string Set2;
+
+        public static int Fr;
+        public static int Du;
+
+        public static int F1 = 277;
+        public static int F2 = 311;
+        public static int F3 = 349;
+        public static int F4 = 185;
+        public static int F5 = 415;
+        public static int F6 = 466;
+
+        public static int D1 = 500;
+        public static int D2 = 500;
+        public static int D3 = 500;
+        public static int D4 = 500;
+        public static int D5 = 500;
+        public static int D6 = 500;
+
+        public static bool Bool1 = false;
+        public static bool Bool2 = false;
+        public static bool Bool3 = false;
+
+        public static bool FrequencyHasBeenChanged = false;
+        public static bool DurationHasBeenChanged = false;
+
+        public static bool RestartSwitch = false;
+
+        static void Main()
+        {
+            Console.Title = "ToneMatricks 1.0.0";
+            Notes();
+            Console.WriteLine();
+            Console.WriteLine("Which tone would you like to change? 1 to 6.");
+            Frequency = (char)Console.Read();
+            if (Frequency > 54)
+            {
+                Frequency = (char)54;
+            }
+            else if (Frequency < 49)
+            {
+                Frequency = (char)49;
+            }
+            ToneMIX = Frequency - 48;
+            Console.WriteLine("Is " + ToneMIX + " correct? Y/N");
+            Console.ForegroundColor = ConsoleColor.Black;
+            ConsoleKeyInfo d = Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.White;
+            if (d.Key == ConsoleKey.Y)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Frequency(F) or Duration(D)?");
+                Console.ForegroundColor = ConsoleColor.Black;
+                ConsoleKeyInfo e = Console.ReadKey();
+                Console.ForegroundColor = ConsoleColor.White;
+                if (e.Key == ConsoleKey.F)
+                {
+                    Bool2 = false;
+                    FrequencySelection();
+                }
+                else if (e.Key == ConsoleKey.D)
+                {
+                    Bool2 = false;
+                    DurationSelection();
+                }
+                else if (e.Key == ConsoleKey.Escape)
+                {
+                    Bool1 = false;
+                    RestartSwitch = true;
+                    Notes();
+                }
+            }
+            else if (d.Key == ConsoleKey.N)
+            { }
+            else if (d.Key == ConsoleKey.Escape)
+            {
+                Bool1 = false;
+                RestartSwitch = true;
+                Notes();
+            }
+        }
+        public static void Notes()
+        {
+            while (Bool1 == false)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine();
+                Console.WriteLine("Frequency(Hz)-Duration(ms)");
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine(F1 + " " + D1);
+                Console.Beep(F1, D1);
+                Console.WriteLine(F2 + " " + D2);
+                Console.Beep(F2, D2);
+                Console.WriteLine(F3 + " " + D3);
+                Console.Beep(F3, D3);
+                Console.WriteLine(F4 + " " + D4);
+                Console.Beep(F4, D4);
+                Console.WriteLine(F5 + " " + D5);
+                Console.Beep(F5, D5);
+                Console.WriteLine(F6 + " " + D6);
+                Console.Beep(F6, D6);
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("End of list. To continue, press ENTER. To Restart press ANYTHING ELSE");
+                Console.ForegroundColor = ConsoleColor.Black;
+                ConsoleKeyInfo b = Console.ReadKey();
+                Console.ForegroundColor = ConsoleColor.White;
+                if (b.Key == ConsoleKey.Enter)
+                {
+                    Bool1 = true;
+                    if (RestartSwitch == true)
+                    {
+                        Main();
+                    }
+                }
+                else if (b.Key == ConsoleKey.Escape)
+                {
+
+                }
+            }
+        }
+        public static void FrequencySelection()
+        {
+            while (Bool2 == false)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Enter a new FREQUENCY: 37 to 32767 Hz");
+                Set = Console.ReadLine();
+                Set = Console.ReadLine();
+                Fr = Convert.ToInt32(Set);
+                if (Fr > 32767)
+                {
+                    Fr = 32767;
+                }
+                else if (Fr < 37)
+                {
+                    Fr = 37;
+                }
+                Console.WriteLine(Fr);
+                if (DurationHasBeenChanged == true)
+                {
+                    Console.Beep(Fr, Du);
+                }
+                else
+                {
+                    Console.Beep(Fr, 500);
+                }
+                Console.WriteLine("This ok? Y/N");
+                Console.ForegroundColor = ConsoleColor.Black;
+                ConsoleKeyInfo f = Console.ReadKey();
+                Console.ForegroundColor = ConsoleColor.White;
+                if (f.Key == ConsoleKey.Y)
+                {
+                    FrequencyHasBeenChanged = true;
+                    ToneChange();
+                    Console.WriteLine();
+                    Console.WriteLine("Would you like to change the duration? Y/N");
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    ConsoleKeyInfo g = Console.ReadKey();
+                    Console.ForegroundColor = ConsoleColor.White;
+                    if (g.Key == ConsoleKey.Y)
+                    {
+                        DurationHasBeenChanged = false;
+                        DurationSelection();
+                    }
+                    else if (g.Key == ConsoleKey.N)
+                    {
+                        Bool1 = false;
+                        Bool2 = true;
+                        RestartSwitch = true;
+                        Notes();
+                    }
+                    else if (g.Key == ConsoleKey.Escape)
+                    {
+                        Bool1 = false;
+                        Bool2 = true;
+                        //DurationHasBeenChanged = false;
+                        RestartSwitch = true;
+                        Notes();
+                    }
+                }
+                else if (f.Key == ConsoleKey.N)
+                { }
+            }
+        }
+        public static void DurationSelection()
+        {
+            while (Bool3 == false)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Enter a new Duration: 50 to 500000 ms");
+                Console.ReadLine();
+                Set2 = Console.ReadLine();
+                Du = Convert.ToInt32(Set2);
+                if (Du > 500000)
+                {
+                    Du = 500000;
+                }
+                else if (Du < 50)
+                {
+                    Du = 50;
+                }
+                Console.WriteLine(Du);
+                if (FrequencyHasBeenChanged == true)
+                {
+                    Console.Beep(Fr, Du);
+                }
+                else
+                {
+                    Console.Beep(500, Du);
+                }
+                Console.WriteLine("This ok? Y/N");
+                Console.ForegroundColor = ConsoleColor.Black;
+                ConsoleKeyInfo f = Console.ReadKey();
+                Console.ForegroundColor = ConsoleColor.White;
+                if (f.Key == ConsoleKey.Y)
+                {
+                    DurationHasBeenChanged = true;
+                    ToneChange();
+                    Console.WriteLine();
+                    Console.WriteLine("Would you like to change the frequency? Y/N");
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    ConsoleKeyInfo h = Console.ReadKey();
+                    Console.ForegroundColor = ConsoleColor.White;
+                    if (h.Key == ConsoleKey.Y)
+                    {
+                        FrequencyHasBeenChanged = false;
+                        FrequencySelection();
+                    }
+                    else if (h.Key == ConsoleKey.N)
+                    {
+                        Bool1 = false;
+                        Bool3 = true;
+                        RestartSwitch = true;
+                        Notes();
+                    }
+                    else if (h.Key == ConsoleKey.Escape)
+                    {
+                        Bool1 = false;
+                        Bool3 = true;
+                        RestartSwitch = true;
+                        Notes();
+                    }
+                }
+                else if (f.Key == ConsoleKey.N)
+                { }
+                else if (f.Key == ConsoleKey.Escape)
+                {
+                    Bool1 = false;
+                    Bool3 = true;
+                    RestartSwitch = true;
+                    Notes();
+                }
+            }
+        }
+        public static void ToneChange()
+        {
+            if (nameof(F1).Contains(ToneMIX.ToString()))
+            {
+                {
+                    if (FrequencyHasBeenChanged == true)
+                    {
+                        F1 = Fr;
+                    }
+                    if (DurationHasBeenChanged == true)
+                    {
+                        D1 = Du;
+                    }
+                }
+            }
+            else if (nameof(F2).Contains(ToneMIX.ToString()))
+            {
+                {
+                    if (FrequencyHasBeenChanged == true)
+                    {
+                        F2 = Fr;
+                    }
+                    if (DurationHasBeenChanged == true)
+                    {
+                        D2 = Du;
+                    }
+                }
+            }
+            else if (nameof(F3).Contains(ToneMIX.ToString()))
+            {
+                if (FrequencyHasBeenChanged == true)
+                {
+                    F3 = Fr;
+                }
+                if (DurationHasBeenChanged == true)
+                {
+                    D3 = Du;
+                }
+            }
+            else if (nameof(F4).Contains(ToneMIX.ToString()))
+            {
+                if (FrequencyHasBeenChanged == true)
+                {
+                    F4 = Fr;
+                }
+                if (DurationHasBeenChanged == true)
+                {
+                    D4 = Du;
+                }
+            }
+            else if (nameof(F5).Contains(ToneMIX.ToString()))
+            {
+                {
+                    if (FrequencyHasBeenChanged == true)
+                    {
+                        F5 = Fr;
+                    }
+                    if (DurationHasBeenChanged == true)
+                    {
+                        D5 = Du;
+                    }
+                }
+            }
+            else if (nameof(F6).Contains(ToneMIX.ToString()))
+            {
+                {
+                    if (FrequencyHasBeenChanged == true)
+                    {
+                        F6 = Fr;
+                    }
+                    if (DurationHasBeenChanged == true)
+                    {
+                        D6 = Du;
+                    }
+                }
+            }
+        }
+    }
+}
