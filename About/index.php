@@ -8,11 +8,11 @@ html {
 	cursor:url("/files/mouse.png"), auto;
 	color: #152754;
 	-webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -webkit-user-drag: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 	user-drag:none;
 	background-color: #000000;
@@ -23,13 +23,13 @@ html {
 }
 
 @font-face {
-    font-family: Subfont;
-    src: url(/files/pixel.ttf);
+	font-family: Subfont;
+	src: url(/files/pixel.ttf);
 }
 
 @font-face {
-    font-family: Mainfont;
-    src: url(/files/cmd.ttf);
+	font-family: Mainfont;
+	src: url(/files/cmd.ttf);
 }
 
 div.main_text {
@@ -109,21 +109,20 @@ div.sec_sub_text p{
 
 .button {
 	background-color: #FFFFFF;
-   color: #000000;
-   border: 3px solid #FFFFFF;
-   display: inline-block;
-   border-radius: 500px;
-   padding: 20px 20px 20px 20px;
-   color: transparent;
+	color: #000000;
+	border: 3px solid #FFFFFF;
+	display: inline-block;
+	border-radius: 500px;
+	padding: 20px 20px 20px 20px;
+	color: transparent;
 }
 
 .button:hover {
 	background-image: url("/files/vw_logo.png");
 	background-size: 100%;
-   background-color: transparent;
-   border: 3px dotted #FFFFFF;
+	background-color: transparent;
+	border: 3px dotted #FFFFFF;
 }
-
 
 div.border {
 	margin: 50px 300px 0px 300px;
@@ -143,48 +142,34 @@ img.emblem {
 
 </style>
 <div id="ecran" style='overflow:auto;width:100%;height:650px;'>
-<div class="bg"></div>
-<div class="sec_main_text">About</div>
-<div>
-</a>
+	<div class="bg"></div>
+	<div class="sec_main_text">About</div>
+	<div>
 		<div class="border">
 			<div>
-			<img src="/files/bio.png" alt="VideoWelder Emblem" class="emblem">
+				<img src="/files/bio.png" alt="VideoWelder Emblem" class="emblem">
 			</div>
 		</div>
+	</div>
+		<div class="main_text">VideoWelder</div>
+		<div class="sub_text">Victor Litzanov</div>
+		<div class="sec_sub_text">
+			<p>A man that has done all of his most notable projects out of sheer boredom;</p>
+			<p>A man obsessing over the weirdness and stupidity of the cold war and the beauty of communist monuments;</p>
+			<p>A man deeply nostalgic of the year 2015;</p>
+			<p>A man afraid of sleeping; 
+			<p>A man with terrible luck with technology;</p>
+			<p>A man in love with electronic-ambient-jazz-fusion music (a very weird musical taste indeed).</p>
+			<p>This is who VideoWelder is. A laidback man that built this site not only to showcase his work, but because he had nothing better to do and one day decided to learn HTML, CSS, JAVASCRIPT, SQL, and PHP.</p>
+			<p>He's manually removed and reverse-engineered viruses, gone past poorly-built pay-walls, messed up Windows 10 into an unstable Windows ME, made music, a computer from garbage, semi-pro photographer, participated in 4 open-source projects (with varying success), designed books...
 		</div>
-		<div class="main_text">
-			VideoWelder
+			<div class="ter_main_text">'Cause Why Not?
+				<p>
+					<a onclick="history.go(-1)" class="button"></a>
+				</p>
 			</div>
-			<div class="sub_text">
-			Victor Litzanov
-			</div>
-			<div class="sec_sub_text">
-			<p>			
-			A man that has done all of his most notable projects out of sheer boredom;</p>
-			<p> 
-			A man obsessing over the weirdness and stupidity of the cold war and the beauty of communist monuments;</p>
-			<p>
-			A man deeply nostalgic of the year 2015;</p>
-			<p>
-			A man afraid of sleeping; 
-			<p>
-			A man with terrible luck with technology;</p>
-			<p>
-			A man in love with electronic-ambient-jazz-fusion music (a very weird musical taste indeed).</p>
-			<p>
-			This is who VideoWelder is. A laidback man that built this site not only to showcase his work, but because he had nothing better to do and one day decided to learn HTML, CSS, JAVASCRIPT, SQL, and PHP.</p>
-			<p>			
-			He's manually removed and reverse-engineered viruses, gone past poorly-built pay-walls, messed up Windows 10 into an unstable Windows ME, made music, a physical synthesizer, a computer from garbage, semi-pro photographer, written Pius English Department Approved short stories (We all know how tough the teachers are), participated in 4 open-source projects (with varying success), designed books...
-			</div>
-			<div class="ter_main_text">
-			'Cause Why Not?
-			<p>
-			<a onclick="history.go(-1)" class="button"></a>
-			</p>
-			</div>
-			</div>
-			<script type='text/javascript'>
+		</div>
+	<script type='text/javascript'>
 function ScrollDiv(){
 if (document.getElementById('ecran').scrollTop > 400) {
    if(document.getElementById('ecran').scrollTop<(document.getElementById('ecran').scrollHeight-document.getElementById('ecran').offsetHeight+100)){-1
