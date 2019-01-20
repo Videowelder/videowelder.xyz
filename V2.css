@@ -75,10 +75,10 @@ div.main_page {
 	padding: 0 70px;
 	width: 800px;
 	height: 100%;
-	top: 50%;
 	margin: auto;
-	transform: translate(50%, 50%);
+	transform: translate(0%, 50%);
 	text-align: center;
+	left: 50%;
 }
 
 div.page_header {
