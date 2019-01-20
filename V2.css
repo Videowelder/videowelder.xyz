@@ -72,9 +72,8 @@ div.sub_text {
 div.main_page {
 	position: relative;
 	display: block;
-
-	min-width: 800px;
-	max-width: 100%;
+	padding: 0 70px;
+	width: 800px;
 	height: 100%;
 	top: 50%;
 	margin: auto;
