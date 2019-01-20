@@ -187,6 +187,9 @@ div.main_text a:visited,
 div.main_text a:active {
 	background-color: #000000;
 	color: #FFFFFF;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
 }
 
 div.main_text a:hover {
