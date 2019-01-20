@@ -76,13 +76,12 @@ div.sub_text {
 
 div.main_page {
 	position: relative;
-	display: table-cell;
+	display: block;
 
 	width: 800px;
 	height: 100%;
 
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 
 	text-align: center;
 	vertical-align: middle;
