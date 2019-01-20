@@ -48,10 +48,6 @@ html {
 	display: table;
 }
 
-body {
-	height:100%;
-}
-
 div.main_text {
 	padding: 4px 8px 4px 8px;
 	color: #FFFFFF;
@@ -78,11 +74,12 @@ div.main_page {
 	position: relative;
 	display: block;
 
-	width: 800px;
+	width: 45%;
+	max-width: 100%;
 	height: 100%;
 
 	margin: auto;
-
+	transform: translate(-50%, -50%);
 	text-align: center;
 	vertical-align: middle;
 }
