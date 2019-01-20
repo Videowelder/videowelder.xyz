@@ -141,7 +141,7 @@ img.emblem {
 }
 
 </style>
-<div onload="Scroll()"
+<body onpageshow="Scroll()">
 	<div class="bg"></div>
 	<div class="sec_main_text">About</div>
 		<div>
@@ -169,7 +169,6 @@ img.emblem {
 			</p>
 		</div>
 	</div>
-</div>
 <script type='text/javascript'>
 function Scroll(){
 	console.log('extcuted');
@@ -177,3 +176,4 @@ function Scroll(){
 	scrolldelay = setTimeout(pageScroll,10);
 }
 </script>
+</body>
