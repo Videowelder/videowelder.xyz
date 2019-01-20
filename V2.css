@@ -45,6 +45,11 @@ html {
 	font-size: 11pt;
 	text-align: center;
 	height: 100%;
+	display: table;
+}
+
+body {
+	height:100%;
 }
 
 div.main_text {
@@ -71,7 +76,7 @@ div.sub_text {
 
 div.main_page {
 	position: relative;
-	display: block;
+	display: table-cell;
 
 	width: 800px;
 	height: 100%;
