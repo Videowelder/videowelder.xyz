@@ -73,11 +73,11 @@ div.main_page {
 	position: absolute;
 	display: block;
 	width: 800px;
-	height: 100%;
 	margin: auto;
 	transform: translate(-50%, 50%);
 	text-align: center;
 	left: 50%;
+	top: 50%;
 }
 
 div.page_header {
