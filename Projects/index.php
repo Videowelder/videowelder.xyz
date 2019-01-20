@@ -313,12 +313,6 @@ div.navbar p {
 <div class="navbar">
 <a href="/" class="section_header_red">Home</a>
 <span>~</span>
-<a href="/Crowtel">
-	<div>Crowtel</div>
-</a>
-<a href="/DATA">
-	<div>DATA</div>
-</a>
 <p class="navbar_selected">Projects</p>
 <a href="/About">
 	<div>About</div>
@@ -331,32 +325,32 @@ div.navbar p {
 		<div class="sub_text">
 		<div>
 			<p align="middle">
-			<a href="/Projects/TM">
-			<img src="/files/tm_logo.ico" alt="" width="25px" height="25px">
+			<a href="/videowelder.xyz/Projects/TM.php">
+			<img src="/videowelder.xyz/files/tm_logo.ico" alt="" width="25px" height="25px">
 			ToneMatricks
 			</a>
 			</p>
 			<p align="middle">
-			<a href="/Projects/ToneGen">
-			<img src="/files/tg_logo.ico" alt="" width="25px" height="25px">
+			<a href="/videowelder.xyz/Projects/ToneGen.php">
+			<img src="/videowelder.xyz/files/tg_logo.ico" alt="" width="25px" height="25px">
 			ToneGen
 			</a>
 			</p>
 			<p align="middle">
-			<a href="/Projects/JMinesweeper">
-			<img src="/files/jm_logo.ico" alt="" width="25px" height="25px">
+			<a href="/videowelder.xyz/Projects/JMinesweeper">
+			<img src="/videowelder.xyz/files/jm_logo.ico" alt="" width="25px" height="25px">
 			Minesweeper
 			</a>
 			</p>
 			<p align="middle">
-			<a href="/Projects/SoDuh">
-			<img src="/files/sd_logo.ico" alt="" width="25px" height="25px">
+			<a href="/videowelder.xyz/Projects/SoDuh">
+			<img src="/videowelder.xyz/files/sd_logo.ico" alt="" width="25px" height="25px">
 			SoDuh
 			</a>
 			</p>
 			<p align="middle">
-			<a href="/Projects/Asteroids">
-			<img src="/files/asteroids_logo.ico" alt="" width="25px" height="25px">
+			<a href="/videowelder.xyz/Projects/Asteroids">
+			<img src="/videowelder.xyz/files/asteroids_logo.ico" alt="" width="25px" height="25px">
 			Asteroids
 			</a>
 			</p>
