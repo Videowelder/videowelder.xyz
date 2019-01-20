@@ -108,12 +108,12 @@ div.sec_sub_text p{
 }
 
 .button {
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	transition: all .2s;
-	background-color: #FFFFFF;
-	color: #000000;
-	border: 3px solid #FFFFFF;
+	-moz-transition: all .2s, border .5s;
+	-webkit-transition: all .2s, border .5s;
+	transition: all .2s, border .5s;
+	background-color: #777777;
+	color: #cccccc;
+	border: 1px solid #cccccc;
 	display: inline-block;
 	border-radius: 0px;
 	padding: 20px 20px 20px 20px;
@@ -121,6 +121,7 @@ div.sec_sub_text p{
 }
 
 .button:hover {
+	color: transparent;
 	background-image: url("/videowelder.xyz/files/vw_logo.png");
 	background-size: 100%;
 	background-color: transparent;
@@ -169,7 +170,7 @@ img.emblem {
 	</div>
 		<div class="ter_main_text">'Cause Why Not?
 			<p>
-				<a onclick="history.go(-1)" class="button"></a>
+				<a onclick="history.go(-1)" class="button">Back</a>
 			</p>
 		</div>
 	</div>
