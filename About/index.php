@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>About</title>
-	<link rel="icon"type="image/png"href="/files/vw_logo.png">
+	<link rel="icon"type="image/png"href="/videowelder.xyz/files/vw_logo.png">
 	<style type="text/css" media="screen">
 
 html {
-	cursor:url("/files/mouse.png"), auto;
+	cursor:url("/videowelder.xyz/files/mouse.png"), auto;
 	color: #152754;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -24,12 +24,12 @@ html {
 
 @font-face {
 	font-family: Subfont;
-	src: url(/files/pixel.ttf);
+	src: url(/videowelder.xyz/files/pixel.ttf);
 }
 
 @font-face {
 	font-family: Mainfont;
-	src: url(/files/cmd.ttf);
+	src: url(/videowelder.xyz/files/cmd.ttf);
 }
 
 div.main_text {
@@ -70,7 +70,7 @@ div.bg {
 	left: 0px;
 	z-index: -1;
 	position: absolute;
-	background-image: url("/files/wall.jpg");
+	background-image: url("/videowelder.xyz/files/wall.jpg");
 	background-size: contain;
 	display: block;
 	filter: blur(2000px);
@@ -118,7 +118,7 @@ div.sec_sub_text p{
 }
 
 .button:hover {
-	background-image: url("/files/vw_logo.png");
+	background-image: url("/videowelder.xyz/files/vw_logo.png");
 	background-size: 100%;
 	background-color: transparent;
 	border: 3px dotted #FFFFFF;
@@ -147,7 +147,7 @@ img.emblem {
 	<div>
 		<div class="border">
 			<div>
-				<img src="/files/bio.png" alt="VideoWelder Emblem" class="emblem">
+				<img src="/videowelder.xyz/files/bio.png" alt="VideoWelder Emblem" class="emblem">
 			</div>
 		</div>
 	</div>
