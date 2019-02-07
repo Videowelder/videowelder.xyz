@@ -1,0 +1,516 @@
+#yt-masthead-container {
+    background-color: #313131;
+    border-bottom: 1px solid #777;
+}
+#masthead-search-terms {
+    background-color: #414141;
+}
+.masthead-search-terms-border {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-color: #515151;
+    box-shadow: inset 0 0 0 transparent;
+}
+.sbhcn {
+    background-color: #777;
+    border-color: #888888;
+}
+#masthead-search-terms input {
+    color: #ffffff;
+    font-size: 14px;
+}
+.yt-uix-button-default {
+    background-color: #525252;
+    border-color: #515151;
+    -moz-transition: border-color 0.2s ease;
+    -webkit-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease;
+}
+.yt-uix-button-default:hover {
+    background-color: #666666;
+    border: solid 1px #888888;
+}
+.exp-invert-logo #header::before,
+.exp-invert-logo .ypc-join-family-header .logo,
+.exp-invert-logo #footer-logo .footer-logo-icon,
+.exp-invert-logo #yt-masthead #logo-container .logo,
+.exp-invert-logo #masthead #logo-container,
+.exp-invert-logo .admin-masthead-logo a,
+.exp-invert-logo #yt-sidebar-styleguide-logo #logo {
+    margin-top: 3px;
+    margin-bottom: -3px;
+    background: no-repeat url("/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_dark.svg");
+}
+#yt-masthead #logo-container span.content-region {
+    color: transparent;
+}
+#masthead-search .search-btn-component .yt-uix-button-content {
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -124px -666px;
+}
+#masthead-search-term::placeholder {
+    color: #fff;
+}
+.appbar-hidden #masthead-positioner-height-offset {
+    margin: 0;
+}
+#yt-masthead-creation-button {
+    width: 60px;
+    background: #525252;
+    -moz-transition: width 0.2s, height 0.2s, background 0.2s;
+    -webkit-transition: width 0.2s, height 0.2s, background 0.2s;
+    transition: width 0.2s, height 0.2s, background 0.2s;
+}
+#yt-masthead-creation-button:hover {
+    background: #777;
+}
+#yt-masthead-creation-button::before {
+    margin-top: -3px;
+    align-content: center;
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -115px -64px;
+}
+#yt-masthead-creation-clickcard {
+    background-color: #434343;
+}
+.yt-uix-clickcard-card-border {
+    border: 1px solid #898989;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #000;
+}
+.yt-masthead-creation-upload {
+    background-color: #525252;
+    border-radius: 2px;
+}
+.yt-masthead-creation-live {
+    background-color: #525252;
+    border-radius: 2px;
+}
+.yt-masthead-creation-clickcard .yt-uix-clickcard-card-content {
+    padding: 0;
+}
+.yt-masthead-creation-clickcard a.yt-uix-button {
+    color: #bbb;
+    background-color: #444;
+    border-radius: 0;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.yt-masthead-creation-clickcard a.yt-uix-button:hover {
+    background-color: #333333;
+}
+.yt-masthead-creation-clickcard {
+    margin-top: -40px;
+    margin-left: -6px;
+}
+#yt-masthead-notifications-content {
+    background-color: #444;
+}
+#yt-masthead-notifications-header {
+    background-color: #444;
+}
+span#yt-masthead-notifications-title {
+    color: #aaa;
+}
+.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical {
+    border-bottom-color: transparent;
+}
+.yt-card {
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 1px 2px #333;
+}
+div#page.watch video-U9aZuFOTHtQ clearfix watch-wide watch-stage-mode {
+    color: #ccc;
+}
+body #footer-container {
+    background-color: #313131;
+}
+.yt-uix-button-default {
+    color: #fff;
+}
+#footer-links-primary a {
+    color: #bbb;
+}
+#footer .yt-picker {
+    background-color: #444;
+}
+.yt-picker-content a,
+.yt-picker-content button {
+    color: #fff;
+}
+.yt-picker-content strong {
+    font-style: oblique;
+    background-color: #999;
+    border-radius: 2px;
+    width: 140px;
+    text-align: center;
+}
+.yt-picker-header h3.yt {
+    color: #fff;
+}
+.yt-default .yt-notes,
+p.yt-notes {
+    color: #aaa;
+}
+.yt-uix-button-default:active,
+.yt-uix-button-default.yt-uix-button-toggled,
+.yt-uix-button-default.yt-uix-button-active,
+.yt-uix-button-default.yt-uix-button-active:focus,
+.yt-uix-button-text:active {
+    background-color: #333;
+    box-shadow: inset 0 1px 0 transparent;
+    border-color: #666;
+}
+.yt-uix-button-arrow {
+    margin-top: -1px;
+    margin-right: -3px;
+    border-top-color: #aaa;
+}
+.yt-uix-button-default.yt-uix-button-toggled:hover {
+    background-color: #444;
+    box-shadow: inset 0 1px 0 transparent;
+}
+#safety-form label {
+    color: #fff;
+}
+#watch-header .yt-user-info a {
+    color: #ddd;
+}
+.yt-uix-button-content {
+    color: #fff;
+}
+.watch-view-count {
+    color: #ddd;
+}
+#watch7-headline h1 {
+    width: auto;
+}
+#watch8-action-buttons {
+    border-top-color: #222;
+    border-top-width: 2px;
+    width: auto;
+}
+.video-extras-sparkbar-likes {
+    background-color: #fff;
+}
+.video-extras-sparkbar-dislikes {
+    background-color: #da2121;
+}
+.ytp-gradient-top,
+.ytp-gradient-bottom {
+    background: #313131;
+    height: 35px;
+}
+.ytp-gradient-bottom {
+    padding-top: 0;
+}
+.ytp-progress-bar-container {
+    bottom: 34px;
+}
+.ytp-chrome-bottom {
+    width: 100% !important;
+    left: 0 !important;
+}
+.ytp-scrubber-button {
+    background-color: #aaa;
+    border: 5px solid #fff;
+    width: 7px;
+    height: 7px !important;
+    border-radius: 15px;
+    margin-top: -2px;
+}
+.yt-dialog-base,
+.yt-uix-overlay-base {
+    background-color: #333;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.yt-uix-overlay-actions {
+    background-color: #333;
+}
+.yt-dialog-fg,
+.yt-uix-overlay-fg {
+    border-color: #777;
+    background-color: #444;
+}
+.unsubscribe-confirmation-message {
+    text-align: center;
+    color: #fff;
+    background-color: #444;
+}
+.yt-uix-button-primary {
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.yt-uix-button-primary:hover {
+    border-color: rgb(56,181,222);
+    background-color: rgb(24,142,198);
+}
+.no-focus-outline .yt-dialog-fg:focus {
+    background-color: #444;
+    border-color: #777;
+}
+.yt-uix-button.yt-uix-button-subscribe-branded,
+.yt-uix-button.yt-uix-button-subscribed-branded {
+    width: 110px;
+    background-color: #555;
+    border-color: #777;
+    -moz-transition: border-color 0.2s, width .2s, background 0.2s;
+    -webkit-transition: border-color 0.2s, width .2s, background 0.2s;
+    transition: border-color 0.2s, width .2s, background 0.2s;
+}
+.yt-uix-button.yt-uix-button-subscribe-branded:hover,
+.yt-uix-button.yt-uix-button-subscribed-branded:hover {
+    width: 110px;
+    background-color: #616161;
+    border-color: #777;
+}
+.yt-uix-subscription-notifications-highlights {
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+    border-color: #777;
+}
+.yt-subscription-button-subscriber-count-branded-horizontal,
+.yt-subscription-button-subscriber-count-unbranded-horizontal {
+    background-color: #666;
+    border-color: #777;
+    color: #ccc;
+}
+.page-loaded {
+    background-color: #222;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+span.branded-page-module-title-text {
+    color: #ccc;
+}
+#browse-items-primary .item-section > li > .yt-lockup-tile,
+.branded-page-v2-primary-col .branded-page-box,
+.section-list li .item-section .branded-page-box {
+    border-bottom: 10px solid#222;
+}
+.yt-lockup-title a,
+.yt-lockup:hover a,
+.yt-lockup:hover .yt-lockup-meta a,
+.yt-lockup:hover .yt-lockup-description a {
+    background-color: transparent;
+    color: #fff;
+}
+.yt-lockup {
+    color: #aaa;
+}
+.yt-lockup-byline.yt-ui-ellipsis.yt-ui-ellipsis-2 {
+    background-color: transparent;
+}
+.yt-uix-sessionlink.spf-link {
+    text-decoration: none;
+    color: #fff;
+}
+#masthead-appbar {
+    background-color: #444;
+    border-bottom-color: #777;
+}
+#masthead-appbar-container {
+    box-shadow: 0 0 5px #000;
+}
+.epic-nav-item-heading {
+    color: #fff;
+    background-color: #777;
+    width: 95px;
+    text-align: center;
+}
+.yt-lockup-thumbnail {
+    border: 1px solid #777;
+    border-radius: 2px;
+}
+#guide-container {
+    background-color: #414141;
+}
+.guide-pinned .guide-pinning-enabled #appbar-guide-menu {
+    border-right-color: #777;
+}
+.exp-invert-logo li.guide-section h3,
+.exp-invert-logo li.guide-section h3 a {
+    color: #ccc;
+}
+.guide-item.guide-item-selected {
+    border-radius: 2px;
+}
+.yt-masthead-account-picker.yt-uix-clickcard-card-content {
+    color: #999;
+    background-color: #444;
+}
+.yt-masthead-picker-footer {
+    background-color: #333;
+}
+.channel-header {
+    color: #ccc;
+}
+.channel-header .branded-page-header-title .branded-page-header-title-link {
+    color: #ccc;
+}
+.c4-featured-content-editor.branded-page-box.clearfix {
+    background-color: #777;
+    margin-top: 5px;
+}
+.epic-nav-item.selected {
+    color: #aaa;
+}
+.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.c4-module-editor-cancel {
+    margin-right: 15px;
+}
+.c4-featured-content-editor .c4-featured-content-notes.byline {
+    color: #ccc;
+}
+.c4-featured-content-editor .c4-featured-content-notes {
+    color: #fff;
+}
+.yt-uix-tabs.branded-page-box.spotlight-editor-tabs {
+    border-bottom: 1px solid #777;
+}
+.primary-header-upper-section-wrapper.clearfix {
+    border-bottom: 1px solid #777;
+    margin-bottom: -10px;
+}
+.yt-uix-button.yt-uix-button-subscribe-unbranded,
+.yt-uix-button.yt-uix-button-subscribed-unbranded {
+    background-color: #444;
+    border-color: #777;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.yt-uix-button-subscribed-unbranded:hover {
+    background-color: #555;
+}
+.branded-page-module-title {
+    color: #ccc;
+}
+#other-channels-sidebar:hover {
+    background-color: #444;
+}
+.related-channels-editor:hover {
+    background-color: #444;
+}
+#other-channels-sidebar {
+    background-color: #333;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.related-channels-editor {
+    background-color: #333;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.yt-uix-button-empty.yt-uix-button-has-icon.casual-settings-button {
+    background-color: transparent;
+}
+.channel-header .secondary-header-contents {
+    background-color: #333;
+}
+.secondary-header-contents .nav-text {
+    color: #fff;
+}
+.channel-header-profile-image {
+    background-color: transparent;
+    box-shadow: 0 1px 1px transparent;
+}
+.yt-thumb {
+    background-color: transparent;
+}
+#appbar-nav .appbar-nav-avatar {
+    border-radius: 50px;
+}
+.yt-lockup-description.yt-ui-ellipsis.yt-ui-ellipsis-2 {
+    background-color: transparent;
+}
+.yt-lockup-description.yt-ui-ellipsis-nowrap-single-line {
+    background-color: transparent;
+}
+.watch-time-text {
+    color: #ccc;
+}
+#eow-description {
+    color: #bbb;
+}
+#action-panel-details a {
+    color: #167ac6;
+}
+.yt-thumb img {
+    border-radius: 2px;
+}
+.video-list-item a,
+.video-list-item .title,
+.video-list .video-list-item .title {
+    color: #fff;
+}
+#watch7-sidebar .watch-sidebar-head {
+    color: #ccc;
+}
+.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.load-more-button.yt-uix-load-more.comment-replies-renderer-paginator.comment-replies-renderer-expander-down.yt-uix-button-link {
+    height: 18px;
+    width: 130px;
+    text-align: center;
+}
+.comment-renderer-author-comment-badge.creator {
+    border-radius: 2px;
+}
+#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile,
+#yt-masthead-notifications-content .yt-ui-ellipsis {
+    background-color: #777;
+}
+.overlay-confirmation-channel-info {
+    color: #fff;
+}
+.yt-dialog-fg-content,
+.yt-uix-overlay-fg-content {
+    color: #fff;
+}
+.overlay-confirmation-preferences-dialog .overlay-confirmation-delivery-method {
+    color: #aaa;
+}
+.comment-simplebox-renderer-collapsed-content {
+    border-color: #777;
+    background-color: #222;
+}
+div.arrow-inner {
+    opacity: 0;
+}
+.ytp-big-mode .ytp-gradient-top,
+.ytp-big-mode .ytp-gradient-bottom {
+    visibility: hidden;
+}
+.comment-simplebox-content > .comment-simplebox
+{
+    background-color: transparent;
+}
+.comment-simplebox-text, .comment-simplebox-prompt
+{
+    background-color: transparent;
+}
+.ytp-big-mode .ytp-scrubber-button
+{
+    margin-top: -2px;
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50px;
+}
+.ytp-popup
+{
+    background: rgb(28,28,28,1);
+    margin-bottom: -10px;
+}
+.watch-playlist
+{
+    background-color: #222;
+}
+#player-playlist .playlist-videos-list li
+{
+    background-color: #222;
+}
