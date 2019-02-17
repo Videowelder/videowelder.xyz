@@ -9,14 +9,8 @@
         padding-top: 2px;
         border-radius: 3px;
     }
-img.close {
-	position: absolute;
-	vertical-align: middle;
-	left: 10px;
-	filter: brightness(200%);
-}
-img.close:hover{
-	background-image: url("/videowelder.xyz/files/back-hover.png");
+svg:hover{
+	border: 5px solid #ffffff;
 }
 
 .nav {
@@ -77,10 +71,16 @@ color: #000000;
 		<div class="section_header">
 		<a href="/videowelder.xyz/V2/Projects">
 			<svg viewBox="0 0 100 100">
+				<defs>
+    <filter id="spotlight">
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+				
   <g transform="translate(-197.47366,-247.52292)">
     <g transform="translate(10.252604,-0.61421131)">
-      <path style="fill:#424c69;stroke-width:0.26458332" d="m 187.22062,255.27261 8.73293,-7.13548 -0.74336,1.92022 -5.23463,5.21526 z"/>
-      <path style="fill:#424c69;stroke-width:0.26458332" d="m 187.22062,255.27261 8.73293,7.15202 -0.74336,-1.92022 -5.23463,-5.2318 z"/>
+      <path style="filter:url(#spotlight);fill:#424c69;stroke-width:0.26458332" d="m 187.22062,255.27261 8.73293,-7.13548 -0.74336,1.92022 -5.23463,5.21526 z"/>
+      <path style="filter:url(#spotlight);fill:#424c69;stroke-width:0.26458332" d="m 187.22062,255.27261 8.73293,7.15202 -0.74336,-1.92022 -5.23463,-5.2318 z"/>
     </g>
   </g>
 			</svg>
