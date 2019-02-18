@@ -20,9 +20,8 @@ filter: brightness(255);
 width: 115px;
 font-family: Subfont;
 color: white;
-position: fixed;
-margin-left: 75px;
 background-color: #212738;
+display:none;
 }
 .nav p:hover {
 background-color: #FFFFFF;
@@ -43,11 +42,10 @@ top:37%;
 </style>
 </head>
 <div class="bg"></div>
-<body onpageshow="Hide()">
 <div class="navbar">
 <a onDragStart="return false;" href="/videowelder.xyz/" class="section_header_red">Home</a>
 <span>~</span>
-<p onmouseover="Show()" onmouseout="Hide()">Projects
+<p onmouseover="Show()" onmouseout="Show()">Projects
 	<nav class="nav" id="subpages" onmouseover="Show()" onmouseout="Hide()">
 		<a onDragStart="return false;" href="/videowelder.xyz/V2/Projects/TM">
 			<p>ToneMatricks</p>
@@ -118,10 +116,9 @@ top:37%;
 </html>
 <script type='text/javascript'>
 function Show(){
-		document.getElementById('subpages').style.visibility = 'visible';
-}
-function Hide(){
-	if(document.getElementById('subpages').style.visibility = 'visible')
-		document.getElementById('subpages').style.visibility = 'hidden';
+		if(document.getElementById('subpages').style.display = 'block')
+		document.getElementById('subpages').style.display = 'none';
+if(document.getElementById('subpages').style.display = 'none')
+		document.getElementById('subpages').style.display = 'block';
 }
 </script>
