@@ -14,15 +14,13 @@
 }
 
 div.bg {
-	top: 0px;
-	left: 0px;
+	 background-repeat: no-repeat;
+  background-size: auto;
 	z-index: -1;
 	position: absolute;
 	background-image: url("/videowelder.xyz/files/wall.jpg");
-	background-size: contain;
+	background-size: cover;
 	filter: blur(2000px);
-	width: 100%;
-	height: 100%;
 }
 
 @font-face {
