@@ -216,6 +216,7 @@ div.sub_text a:hover {
 }
 
 div.navbar {
+transition: width 1s;
 	position: fixed;
 	top: 0;
 	left: 0;
