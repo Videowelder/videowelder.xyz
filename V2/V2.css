@@ -236,13 +236,16 @@ div.navbar a:active {
 	font-weight: bold;
 	color: #FFFFFF;
 width:75px;
+transition: width 1s;
+text-align:center;
+padding: 5px 0px 5px 0px;
 }
 
 div.navbar div {
 	font-style: normal;
 	font-weight: bold;
 	color: #FFFFFF;
-	text-align: left;
+	text-align: center;
 	padding-left: 5px;
 }
 
@@ -262,6 +265,8 @@ div.navbar p {
 background-color: #ffffff;
 	font-weight: bold;
 	font-size: 100%;
+vertical-align:middle;
+text-align:center;
 }
 
 svg
