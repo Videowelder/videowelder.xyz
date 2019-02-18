@@ -55,7 +55,12 @@ font-weight: bold;
 font-size: 100%;
 vertical-align:middle;
 text-align:center;
-width:75px;
+border-bottom: 1px dotted #000;
+border-top: 1px dotted #000;
+}
+
+div.navbar p:hover {
+border-top: none;
 }
 
 .nav {
@@ -66,11 +71,6 @@ background-color: #212738;
 display:none;
 }
 
-.nav p:hover {
-background-color: #000;
-color: #fff;
-}
-
 .nav li {
 	text-decoration: none;
 	font-style: normal;
@@ -78,6 +78,11 @@ color: #fff;
 	color: #FFFFFF;
 width:auto;
 vertical-align:middle;
+}
+
+.nav li:hover {
+background-color: #000;
+color: #fff;
 }
 
 .back{
