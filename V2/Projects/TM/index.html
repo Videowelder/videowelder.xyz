@@ -45,8 +45,8 @@ top:37%;
 <div class="navbar">
 <a onDragStart="return false;" href="/videowelder.xyz/" class="section_header_red">Home</a>
 <span>~</span>
-<p onmouseover="Show()" onmouseout="Show()">Projects
-	<nav class="nav" id="subpages" onmouseover="Show()" onmouseout="Show()" style="display:none;">
+<p onmouseover="document.getElementById('subpages').style.display = 'inline-block';" onmouseout="document.getElementById('subpages').style.display = 'none';">Projects
+	<nav class="nav" id="subpages" onmouseover="document.getElementById('subpages').style.display = 'inline-block';" onmouseout="document.getElementById('subpages').style.display = 'none';">
 		<a onDragStart="return false;" href="/videowelder.xyz/V2/Projects/TM">
 			<p>ToneMatricks</p>
 		</a>		
@@ -114,15 +114,3 @@ top:37%;
 	</div>
 </body>
 </html>
-<script type='text/javascript'>
-function Show(){
-if(document.getElementById('subpages').style.display = 'block')
-{
-	document.getElementById('subpages').style.display = 'none';
-}
-if(document.getElementById('subpages').style.display = 'none')
-{
-	document.getElementById('subpages').style.display = 'block';
-}
-}
-</script>
