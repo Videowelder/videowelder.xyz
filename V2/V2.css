@@ -218,6 +218,94 @@ div.sub_text a:hover {
 	color: #000000;
 }
 
+div.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-family: Subfont;
+	text-align: center;
+	background-color: #2e3a5a;
+	color: #fff;
+	height: 100%;
+	padding-top: 20px;
+width:75px;
+}
+
+div.navbar a:link,
+div.navbar a:visited,
+div.navbar a:active {
+display:inline-block;
+text-decoration: none;
+font-style: normal;
+font-weight: bold;
+color: #fff;
+text-align:center;
+padding: 2px 0px 0px 0px;
+width: 100%;
+}
+
+div.navbar a:hover {
+color: #000;
+background-color: #fff;
+}
+
+div.navbar p {
+color: #000;
+background-color: #fff;
+font-weight: bold;
+font-size: 100%;
+vertical-align:middle;
+text-align:center;
+padding: 0px 5px 0px 5px;
+}
+
+.nav {
+border-top: 1px dotted #fff;
+border-bottom: 1px dotted #fff;
+width: 170px;
+font-family: Subfont;
+color: white;
+background-color: #212738;
+display:none;
+}
+
+.nav li {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+width: 100%;
+vertical-align:middle;
+display:inline-block;
+}
+
+.nav li:hover {
+background-color: #000;
+color: #fff;
+}
+
+.nav a {
+text-decoration: none;
+font-style: normal;
+font-weight: bold;
+color: #FFFFFF;
+width: 100% !important;
+vertical-align:middle;
+display:inline-block;
+padding: 0px 0px 0px 0px !important;
+}
+
+.nav a:hover {
+width:100%;
+background-color: #000;
+color: #fff;
+}
+
+.navbar div {
+border-top: 1px solid #2e3a5a;
+width:100%;
+}
+
 svg
 {
 	width:250px;
