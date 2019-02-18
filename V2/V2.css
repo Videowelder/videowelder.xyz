@@ -198,6 +198,7 @@ div.main_text a:hover {
 div.sub_text a:link,
 div.sub_text a:visited,
 div.sub_text a:active {
+display: inline-block;
 	transition: box-shadow .5s;
 	-moz-transition: box-shadow .5s;
 	-webkit-transition: box-shadow .5s;
