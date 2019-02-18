@@ -216,7 +216,6 @@ div.sub_text a:hover {
 }
 
 div.navbar {
-	width: 75px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -235,6 +234,7 @@ div.navbar a:active {
 	font-style: normal;
 	font-weight: bold;
 	color: #FFFFFF;
+width:75px;
 }
 
 div.navbar div {
@@ -257,12 +257,10 @@ div.navbar a:hover {
 }
 
 div.navbar p {
-	color: #FFFFFF;
-	background-color: #152754;
-	border-top: 1px double #FFFFFF;
-	border-bottom: 1px double #FFFFFF;
+	color: #000000;
+background-color: #ffffff;
 	font-weight: bold;
-	font-size: 110%;
+	font-size: 100%;
 }
 
 svg
