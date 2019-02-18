@@ -215,47 +215,6 @@ div.sub_text a:hover {
 	color: #000000;
 }
 
-div.navbar {
-transition: width 1s;
-	position: fixed;
-	top: 0;
-	left: 0;
-	font-family: Subfont;
-	text-align: center;
-	background-color: #2e3a5a;
-	color: #FFFFFF;
-	height: 100%;
-	padding-top: 20px;
-}
-
-div.navbar a:link,
-div.navbar a:visited,
-div.navbar a:active {
-display:inline-block;
-text-decoration: none;
-font-style: normal;
-font-weight: bold;
-color: #FFFFFF;
-width:75px;
-transition: width 1s;
-text-align:center;
-padding: 2px 5px 2px 5px;
-}
-
-div.navbar a:hover {
-	color: #000000;
-	background-color: #FFFFFF;
-}
-
-div.navbar p {
-	color: #000000;
-background-color: #ffffff;
-	font-weight: bold;
-	font-size: 100%;
-vertical-align:middle;
-text-align:center;
-}
-
 svg
 {
 	width:250px;
