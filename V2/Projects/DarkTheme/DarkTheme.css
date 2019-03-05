@@ -1,6 +1,7 @@
 #yt-masthead-container {
     background-color: #313131;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #555;
+    box-shadow: 0px 0px 2px #000;
 }
 #masthead-search-terms {
     background-color: #414141;
@@ -64,6 +65,8 @@
     background: #777;
 }
 #yt-masthead-creation-button::before {
+    filter: brightness(2);
+    opacity: 0.5;
     margin-top: -3px;
     align-content: center;
     background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -115px -64px;
@@ -115,9 +118,9 @@ span#yt-masthead-notifications-title {
     border-bottom-color: transparent;
 }
 .yt-card {
-    color: #fff;
-    background-color: #333;
-    box-shadow: 0 1px 2px #333;
+    color: #aaa;
+    background-color: #2a2a2a;
+    box-shadow: 0px 1px 2px #000;
 }
 div#page.watch video-U9aZuFOTHtQ clearfix watch-wide watch-stage-mode {
     color: #ccc;
@@ -255,8 +258,8 @@ p.yt-notes {
 .yt-uix-button.yt-uix-button-subscribe-branded,
 .yt-uix-button.yt-uix-button-subscribed-branded {
     width: 110px;
-    background-color: #555;
-    border-color: #777;
+    background-color: #444;
+    border-color: #666;
     -moz-transition: border-color 0.2s, width .2s, background 0.2s;
     -webkit-transition: border-color 0.2s, width .2s, background 0.2s;
     transition: border-color 0.2s, width .2s, background 0.2s;
@@ -264,7 +267,7 @@ p.yt-notes {
 .yt-uix-button.yt-uix-button-subscribe-branded:hover,
 .yt-uix-button.yt-uix-button-subscribed-branded:hover {
     width: 110px;
-    background-color: #616161;
+    background-color: #555;
     border-color: #777;
 }
 .yt-uix-subscription-notifications-highlights {
@@ -280,7 +283,7 @@ p.yt-notes {
     color: #ccc;
 }
 .page-loaded {
-    background-color: #222;
+    background-color: #1b1b1b;
     -moz-transition: background 0.5s;
     -webkit-transition: background 0.5s;
     transition: background 0.5s;
@@ -463,7 +466,7 @@ span.branded-page-module-title-text {
 }
 #yt-masthead-notifications-content .item-section > li > .yt-lockup-tile,
 #yt-masthead-notifications-content .yt-ui-ellipsis {
-    background-color: #777;
+    background-color: #555;
 }
 .overlay-confirmation-channel-info {
     color: #fff;
@@ -513,4 +516,213 @@ div.arrow-inner {
 #player-playlist .playlist-videos-list li
 {
     background-color: #222;
+}
+.watch-extras-section .title {
+    color:#777777;
+}
+.comment-simplebox-text {
+    color:#cccccc;
+}
+.unread-dot{
+    background-color: rgb(255,100,100) !important;
+}
+.comment-replies-renderer-expander-up::after,.yt-uix-button-icon-icon-account-settings,#yt-masthead-notifications .yt-uix-button-icon-bell, #action-panel-overflow-button::before, .autoplay-bar .autoplay-info-icon, .action-panel-trigger-overflow::before, .yt-uix-subscription-preferences-button::before, .like-button-renderer-like-button::before, .like-button-renderer-dislike-button::before, .comment-replies-renderer-expander-down::after, .addto-button::before, .action-panel-trigger-share::before, #comment-section-renderer .sprite-dislike::before, #comment-section-renderer .sprite-like::before{
+    filter: invert(1);
+}
+.yt-lockup-notification .yt-lockup-title a{
+    color:#ccc;
+    background-color:transparent;
+}
+.yt-lockup-title a:hover{
+    color:#284075;
+    background:transparent;
+}
+#watch7-sidebar .video-list-item a:visited .title, #watch7-sidebar .video-list-item a:link .title{
+    color: #bbb;
+}
+#watch7-sidebar .video-list-item a:visited:hover .title{
+    color: #eee;
+}
+.yt-badge {
+    border-radius: 2px;
+    border: 1px solid #999;
+    background-color: #444;
+    color: #999;
+}
+#yt-masthead-user button{
+    border-radius: 2px;
+    min-width: 35px;
+    vertical-align: middle;
+    margin-right:2px;
+}
+button#P{
+    margin: 0px 0px 0px 10px !important;
+}
+button#P svg{
+    filter: invert(1);
+}
+#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile:hover{
+    background-color: #333;
+}
+.ytp-ce-element{
+    background-color: transparent;
+    border: 3px solid rgba(200,200,200,0.5);
+}
+.ytp-ce-element:hover{
+    border: 3px solid rgba(200,200,200,0.8);
+}
+.ytp-ce-expanding-overlay-background{
+    background-color: #444;
+    border-radius: 1px;
+}
+.yt-ui-ellipsis{
+    background-color: transparent !important;
+}
+.ytp-ce-covering-shadow-top{
+    background-image:none;
+}
+a.ytp-ce-link{
+    color:#ccc !important;
+}
+.ytp-popup{
+    background: #222 !important;
+    bottom: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    z-index: 10;
+}
+.ytp-menuitem-toggle-checkbox{
+    width: 32px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.ytp-menuitem-toggle-checkbox::after{
+    border-radius: 50%;
+    margin-top:0px;
+    width: 15px;
+    height:15px;
+}
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after{
+    transform: translateX(18px) !important;
+}
+.html5-video-player svg
+{
+    filter: drop-shadow(0px 1px 0px #000);
+}
+.ytp-panel-header{
+    height: initial !important;
+}
+.comment-section-renderer-paginator{
+    background: #444 !important;
+}
+.comment-section-renderer-paginator:hover{
+    background: #555 !important;
+}
+.yt-uix-button-icon-creation-live,.yt-uix-button-icon-creation-upload,.like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled::before,#comment-section-renderer .sprite-like[aria-checked="true"]::before,#comment-section-renderer .sprite-dislike[aria-checked="true"]::before,.like-button-renderer-like-button.yt-uix-button-toggled .yt-uix-button-content
+{
+    filter: brightness(0) grayscale(1) invert(1);
+}
+.yt-uix-button-content{
+    color:#ccc;
+}
+.comment-replies-renderer-paginator span.load-more-text{
+    padding: 0px 15px 0px 15px;
+}
+.comment-replies-renderer-expander-down span.load-more-text{
+    padding: 0px 0px 0px 10px;
+}
+.ytp-time-duration{
+    color:#757575;
+}
+.ytp-time-current{
+    color:#fff;
+}
+.ytp-time-display{
+    font-size:11px !important;
+    margin-top:-3px;
+}
+.ytp-svg-shadow{
+    stroke:none;
+    fill:none;
+}
+.ytp-chrome-controls svg{
+    opacity: 0;
+}
+.ytp-chrome-bottom,.ytp-chrome-controls,.ytp-gradient-bottom{
+    height: 27px;
+}
+.ytp-gradient-bottom,.html5-video-player.ytp-fullscreen{
+    background-color: #1b1b1b;
+}
+.ytp-progress-bar-container{
+    bottom:26px;
+}
+.ytp-scrubber-container{
+    z-index: 999999;
+}
+.ytp-progress-list{
+    background: #444444;
+}
+.watch-stage-mode #theater-background,#player .player-api
+{
+    box-shadow: 0px 0px 5px 0px #000;
+}
+video.video-stream.html5-main-video{
+    top:0px !important;
+}
+.ytp-left-controls .ytp-button{
+    transition: all .5s;
+    height: 27px;
+    width: 36px;
+    filter: brightness(0) invert(51%) hue-rotate(292deg) brightness(88%) contrast(87%) drop-shadow(0px 1px 0px #000);
+}
+.ytp-right-controls .ytp-button{
+    transition: all .5s;
+}
+.ytp-button:not([aria-disabled="true"]):not([disabled]):not([aria-hidden="true"]):hover {
+    filter: brightness(110%);
+}
+.ytp-chrome-controls .ytp-play-button{
+    margin-left: 10px;
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -104px -187px;
+    background-size: 274px 937px;
+}
+.ytp-chrome-controls .ytp-next-button{
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -204px -139px;
+}
+.ytp-chrome-controls .ytp-mute-button{
+    width: 32px;
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -180px -914px;
+}
+.ytp-volume-panel{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -1px;
+}
+.ytp-chrome-controls .ytp-subtitles-button{
+    width: 32px;
+    margin-top: 2px;
+    filter: brightness(0) invert(51%) hue-rotate(292deg) brightness(88%) contrast(87%) drop-shadow(0px 1px 0px #000);
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -186px -746px;
+}
+.ytp-chrome-controls .ytp-button[aria-pressed="true"]::after {
+    width: 15px;
+}
+.ytp-chrome-controls .ytp-settings-button{
+    width: 32px;
+    filter: brightness(47%) drop-shadow(0px 1px 0px #000);
+    background: no-repeat url("//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png") -122px -836px;
+    background-size: 290px 942px;
+    filter: multiply(110%);
+}
+.ytp-chrome-controls .ytp-hd-quality-badge::after{
+    top: 12px;
+    right: 1px;
+}
+.standalone-collection-badge-renderer-text a{
+    background-color: #555;
+}
+.yt-uix-button-subscribe-branded::before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png) -26px -875px;
 }
