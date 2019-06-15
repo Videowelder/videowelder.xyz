@@ -212,6 +212,7 @@ div.sub_text a:active {
 	color: #FFFFFF;
 	border: 2px solid;
 	background: #fff1;
+	position: relative;
 }
 
 div.sub_text a:hover {
