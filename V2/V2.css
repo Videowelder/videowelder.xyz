@@ -58,6 +58,10 @@ div.main_text {
 	text-decoration: none;
 }
 
+p {
+	padding: 5px;
+}
+
 div.sub_text {
 	padding: 4px 8px 4px 8px;
 	color: #FFFFFF;
