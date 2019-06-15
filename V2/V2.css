@@ -204,9 +204,9 @@ div.main_text a:hover {
 div.sub_text a:link,
 div.sub_text a:visited,
 div.sub_text a:active {
-	transition: box-shadow .5s;
-	-moz-transition: box-shadow .5s;
-	-webkit-transition: box-shadow .5s;
+	transition: box-shadow .5s, margin .5s;
+	-moz-transition: box-shadow .5s, margin .5s;
+	-webkit-transition: box-shadow .5s, margin .5s;
 	text-decoration: none;
 	font-style: normal;
 	color: #FFFFFF;
@@ -217,6 +217,7 @@ div.sub_text a:active {
 div.sub_text a:hover {
 	text-decoration: none;
 	box-shadow: 5px 5px #000;
+	margin: -5px -5px 5px 5px;
 }
 
 div.navbar {
