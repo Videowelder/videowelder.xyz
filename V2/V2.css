@@ -200,22 +200,20 @@ div.main_text a:hover {
 div.sub_text a:link,
 div.sub_text a:visited,
 div.sub_text a:active {
-display: inline-block;
 	transition: box-shadow .5s;
 	-moz-transition: box-shadow .5s;
 	-webkit-transition: box-shadow .5s;
 	text-decoration: none;
 	font-style: normal;
 	font-weight: bold;
-	background-color: #000000;
 	color: #FFFFFF;
+	padding: 2px 5px 2px 5px;
+	border: 2px solid;
 }
 
 div.sub_text a:hover {
 	text-decoration: none;
-	background-color: #FFFFFF;
 	box-shadow: 5px 5px #000;
-	color: #000000;
 }
 
 div.navbar {
