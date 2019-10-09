@@ -292,6 +292,21 @@ div.navbar {
     width: 100%;
 }
 
+a.big {
+    display: flex;
+    align-items: end;
+}
+
+a.big span {
+    text-align: end;
+    width: 100%;
+}
+
+a.big img {
+    width: 35px;
+    height: 35px;
+}
+
 svg {
     width: 250px;
     height: 250px;
