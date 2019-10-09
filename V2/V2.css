@@ -184,9 +184,9 @@ div.main_text a:hover {
     color: #FFFFFF;
 }
 
-a:link,
-a:visited,
-a:active {
+a.small:link,
+a.small:visited,
+a.small:active {
     transition: box-shadow .5s, margin .5s;
     -moz-transition: box-shadow .5s, margin .5s;
     -webkit-transition: box-shadow .5s, margin .5s;
@@ -199,7 +199,13 @@ a:active {
     display: inline-flex;
 }
 
-a:hover {
+a.small:link span,
+a.small:visited span,
+a.small:active span {
+    width: 100%;
+}
+
+a.small:hover {
     text-decoration: none;
     box-shadow: 5px 5px #000;
     margin: -5px 5px 5px -5px;
