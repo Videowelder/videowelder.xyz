@@ -210,11 +210,11 @@ div.navbar {
     left: 0;
     font-family: Subfont;
     text-align: center;
-    background-color: #2e3a5a;
+    background-color: #2e3a5a55;
     color: #fff;
     height: 100%;
     padding-top: 20px;
-    width: 75px;
+    width: min-content;
 }
 
     div.navbar a:link,
