@@ -1,18 +1,16 @@
 ﻿<!DOCTYPE html>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <body>
-<script>
-	if(window.location.hash) {
-	var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-		if (hash == "Quote")
-		{
-			window.location.replace("/videowelder.xyz/V2/Designs");
-		}else{
-			window.location.replace("/videowelder.xyz/V2");
-		}
-	} else {
-	      window.location.replace("/videowelder.xyz/V2");
-	}
-</script>
+    <script>
+        if (window.location.hash) {
+            var hash = window.location.hash.substring(1);
+            if (hash == "v1") {
+                window.location.replace("/videowelder.xyz/V1");
+            } else {
+                window.location.replace("/videowelder.xyz/stop.html");
+            }
+        } else {
+            window.location.replace("/videowelder.xyz/stop.html");
+        }
+    </script>
 </body>
