@@ -1,0 +1,218 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    cursor: url("/videowelder.xyz/files/mouse.png"), auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+}
+
+html {
+    padding: 3px 3px 3px 3px;
+    margin-left: 75px;
+    background-color: #152754;
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Subfont;
+    src: url(/videowelder.xyz/files/Fonts/pixel.ttf);
+}
+
+@font-face {
+    font-family: Mainfont;
+    src: url(/videowelder.xyz/files/Fonts/cmd.ttf);
+}
+
+div.main_text {
+    padding: 4px 8px 4px 8px;
+    color: #fff;
+    font-size: 100%;
+    font-weight: 100;
+    font-family: Mainfont;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.sub_text {
+    padding: 4px 8px 4px 8px;
+    color: #fff;
+    font-size: 100%;
+    font-weight: 100;
+    font-family: Subfont;
+    font-size: 12pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.main_page {
+    position: relative;
+    display: block;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+    border-color: #212738;
+    border-style: dotted;
+    border-radius: 3px;
+    background-color: #2e3a5a;
+    text-align: center;
+}
+
+div.page_header {
+    height: 99px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+    div.page_header span {
+        margin: 15px 0px 0px 50px;
+        font-size: 180%;
+        font-weight: bold;
+    }
+
+    div.page_header img {
+        margin: 3px 0px 0px 40px;
+        border: 0px 0px 0px;
+    }
+
+div.section_header {
+    padding: 3px 6px 3px 6px;
+    background-color: #CD214F;
+    text-shadow: 5px 5px #2e3a5a;
+    color: #FFFFFF;
+    font-family: Mainfont;
+    font-weight: bold;
+    font-size: 333%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.footer, .home {
+    background-color: #CD214F;
+    color: #FFFFFF;
+    font-family: Subfont;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0px 10px 0px 10px;
+}
+
+.home {
+    padding: 0px 0px 0px 0px;
+}
+
+.home:hover {
+    border: none;
+}
+
+div.section_header_grey {
+    background-color: #F5F6F7;
+}
+
+div.main_text a {
+    background-color: #000;
+    color: #fff;
+}
+
+    div.main_text a:hover {
+        text-decoration: none;
+        background-color: #000;
+        color: #fff;
+    }
+
+.sub_text a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    height: 20px;
+    align-items: baseline;
+}
+
+    .sub_text a:hover {
+        text-decoration: none;
+        background-color: #fff;
+        box-shadow: 5px 5px;
+        color: #000;
+    }
+
+    .sub_text a span {
+        width: 100%;
+    }
+
+    .sub_text a img {
+        width: 35px;
+        height: 35px;
+        align-self: flex-end;
+    }
+
+div.navbar {
+    width: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Subfont;
+    text-align: center;
+    border-right: 3px dotted #212738;
+    background-color: #2e3a5a;
+    color: #fff;
+    height: 100%;
+    padding-top: 20px;
+}
+
+    div.navbar a {
+        display: inline-block;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        color: #fff;
+        width: 100%;
+    }
+
+        div.navbar a:hover {
+            color: #000;
+            background-color: #fff;
+            border-right: 3px dotted #212738;
+        }
+
+    div.navbar p {
+        color: #fff;
+        background-color: #152754;
+        border-top: 1px double #fff;
+        border-bottom: 1px double #fff;
+        font-weight: bold;
+        margin-right: -3px;
+        font-size: 110%;
+    }
+
+img.close {
+    position: absolute;
+    margin-top: 15px;
+    left: 10px;
+}
+
+    img.close:hover {
+        background-image: url("/videowelder.xyz/files/Classic/back-hover.png");
+    }
+
+img.bird {
+    background: url("/videowelder.xyz/files/Classic/vw_logo.png");
+    width: 512px;
+    height: 512px;
+}

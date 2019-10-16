@@ -1,16 +1,44 @@
 ﻿<!DOCTYPE html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Videowelder Hub</title>
+<link rel="icon" type="image/svg" href="/videowelder.xyz/files/Bird_Shaded.svg">
+<link rel="stylesheet" href="/videowelder.xyz/V2.css">
+<canvas id="canvas" width="1000" height="1000" style="top:0;left:0;position:absolute;"></canvas>
 <body>
-    <script>
-        if (window.location.hash) {
-            var hash = window.location.hash.substring(1);
-            if (hash == "v1") {
-                window.location.replace("/videowelder.xyz/V1");
-            } else {
-                window.location.replace("/videowelder.xyz/stop.html");
-            }
-        } else {
-            window.location.replace("/videowelder.xyz/stop.html");
-        }
-    </script>
+    <div class="navbar" id="navbar">
+        <p>Home</p>
+        <span>~</span>
+        <a onDragStart="return false;" href="/videowelder.xyz/Projects">Projects</a>
+        <a onDragStart="return false;" href="/videowelder.xyz/Photos">Photos</a>
+    </div>
+    <div class="main_page">
+        <div class="section_header">It works!</div>
+        <div class="main_text">
+            <p align="middle">Thanks for testing! See you tomorrow!</p>
+            <img onDragStart="return false;" class="bird" />
+        </div>
+        <div class="sub_text">
+            <p align="center">Links:</p>
+            <div style="display:flex;">
+                <a onDragStart="return false;" href="https://Soundcloud.com/vunkmeisterone" target="_blank">
+                    <span>Soundcloud</span>
+                </a>
+                <a onDragStart="return false;" href="https://www.linkedin.com/in/victor-litzanov/" target="_blank">
+                    <span>Linkedin</span>
+                </a>
+                <a onDragStart="return false;" href="https://www.instagram.com/video_welder/" target="_blank">
+                    <span>Instagram</span>
+                </a>
+                <a onDragStart="return false;" href="https://twitter.com/vunkmeister" target="_blank">
+                    <span>Twitter</span>
+                </a>
+            </div>
+            <div style="margin:auto;padding-top: 10px;width:30%;display:flex;">
+                <a onDragStart="return false;" href="/videowelder.xyz/">
+                    <span>The original site</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer">Have A Nice Day!</div>
+    </div>
 </body>
