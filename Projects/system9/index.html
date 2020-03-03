@@ -1,278 +1,59 @@
 <!DOCTYPE html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Videowelder Hub</title>
-<link rel="icon" type="image/png" href="/videowelder.xyz/files/classic/vw_logo.png">
-<style type="text/css" media="screen">
-    @font-face {
-        font-family: 'Charcoal';
-        font-style: normal;
-        font-weight: 400;
-        src: url("/videowelder.xyz/files/Projects/OS9/root/Charcoal.ttf");
-    }
-
-    body {
-        background: #000;
-    }
-
-    * {
-        font-size: 12px;
-        font-family: 'Charcoal';
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-
-    .bg {
-        /*background-image:*/
-        border-radius: 8px;
-        background: rgb(49,66,123);
-        width: 1024px;
-        height: 768px;
-        margin: auto;
-        cursor: url("/videowelder.xyz/files/Projects/OS9/root/shell/mouse.png"), auto;
-    }
-
-    a.links {
-        font-size: 14px;
-        display: block;
-        color: #090909;
-        background-color: #dcdcdc;
-        border-radius: 4px;
-        border: 1px solid #090909;
-        padding: 1px 12px 1px 12px;
-        text-align: center;
-        text-decoration: none;
-        box-shadow: inset 1px 1px 0px #dddddd, inset 2px 2px 0px #ffffff, inset -1px -1px 0px #777777, inset -2px -2px 0px #aaaaaa;
-        cursor: url("/videowelder.xyz/files/mouse.png"), auto;
-    }
-
-        a.links:active {
-            color: #fefefe;
-            background-color: #666666;
-            box-shadow: inset 1px 1px 0px #444444, inset 2px 2px 0px #555555, inset -1px -1px 0px #888888, inset -2px -2px 0px #777777;
-        }
-
-    li {
-        display: block;
-        padding: 15px 20px 0px 0px;
-    }
-
-    td.lines {
-        border-top: 1px solid #ffffff;
-        text-align: center;
-        padding: 0px 0px 0px 0px 0px;
-        box-shadow: inset 0px 1px 0px #777777;
-    }
-
-    .highlight_panel {
-        background-color: #eeeeee;
-        width: 400px;
-        box-shadow: inset -1px -1px 0px #999999, inset -2px -2px 0px #bbbbbb, inset 1px 1px 0px #cccccc, inset 2px 2px 0px #ffffff;
-        border-right: 1px solid #090909;
-    }
-
-    .taskbar {
-        background: rgb(222,222,222);
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        width: inherit;
-        height: 19px;
-        display: inline-flex;
-        text-align: center;
-        border-bottom: 1px solid #090909;
-        box-shadow: inset -1px -1px #999999, inset 1px 1px #fff;
-    } 
-
-        .taskbar div.sep {
-            width: 6px;
-            height: inherit;
-            box-shadow: 1px 0px rgb(156,156,156), -2px 0px 0px -1px rgb(255,255,255);
-            flex-shrink: 0;
-            flex-grow: 0;
-        }
-
-        .taskbar div.special {
-            flex-shrink: 0;
-            flex-grow: 0;
-        }
-
-        .taskbar div.options {
-            width:100%;
-            display:flex;
-        }
-
-        .taskbar div.options a {
-            padding: 0px 5px 0px 5px;
-            align-self: center;
-        }
-
-        .taskbar div.options a:active {
-                background: #999999;
-                color: #fff;
-            }
-
-    .main_border {
-        width: max-content;
-        text-align: center;
-        border: 1px solid #090909;
-        background-color: #cccccc;
-        color: #090909;
-        box-shadow: 2px 2px 0px #090909, inset 1px 1px 0px #ffffff, inset -1px -1px 0px #999999;
-        padding: 4px 4px 4px 4px;
-    }
-
-    .sub_border {
-        display: block;
-        max-height: 700px;
-        background-color: #dcdcdc;
-        bottom: 3px;
-        border: 1px solid #010101;
-        box-shadow: 0px 1px #ffffff, 1px 1px #ffffff, 1px 0px #ffffff, 0px -1px #8e8e8e, -1px -1px #8e8e8e, -1px 0px #8e8e8e;
-    }
-
-    .titlebar {
-        display: flex;
-        height: 16px;
-        width: 100%;
-    }
-
-        .titlebar div.button {
-            width: 9px;
-            height: 9px;
-            border: 1px solid rgb(33,33,33);
-            background-image: linear-gradient(-45deg, #ffffff, rgb(239,239,239), rgb(222,222,222), rgb(206,206,206), rgb(189,189,189), rgb(173,173,173), rgb(156,156,156));
-            box-shadow: inset 1px 1px #CECECE, inset -1px -1px #8C8C8C, 0px 1px #ffffff, 1px 1px #ffffff, 1px 0px #ffffff, -0px -1px #8C8C8C, -1px -1px #8C8C8C, -1px -0px #8C8C8C;
-            display: inline-block;
-            flex-grow: 0;
-            flex-shrink: 0;
-        }
-
-            .titlebar div.button:active {
-                background-image: linear-gradient(135deg, #444444, rgb(85,85,85), rgb(102,102,102), rgb(119,119,119), rgb(136,136,136), rgb(153,153,153), rgb(170,170,170));
-                box-shadow: inset -1px -1px 0px #999999, .75px .75px 0px .5px #ffffff, -.75px -.75px 0px .5px #8C8C8C;
-            }
-
-        .titlebar div.title {
-            height: 12px;
-            background: repeating-linear-gradient(0deg,#707070,#707070 1px,#ffffff 1px,#ffffff 2px);
-            font-size: 13px;
-            text-align: center;
-            width: 100%;
-            margin: -1px 5px 0px 5px;
-            min-width: 200px;
-            border-right: 1px dotted #cccccc;
-            border-left: 1px dotted #cccccc;
-        }
-
-        .titlebar span {
-            flex-shrink: 0;
-            flex-grow: 0;
-            margin-top: -3px;
-        }
-</style>
+<title>System9 | Videowelder.xyz</title>
+<link rel="icon" type="image/png" href="/videowelder.xyz/files/Projects/Icons/system9.png">
+<link rel="stylesheet" href="/videowelder.xyz/default.css">
 <body>
-    <div class="bg">
-        <div class="taskbar">
-            <div class="special" style="width: 44px;border-top-left-radius:10px;background-image: url('/videowelder.xyz/files/projects/os9/root/shell/apple.png');background-repeat:no-repeat;background-position:center;"></div>
-            <div class="options">
-                <a ondragstart="return false;">File</a>
-                <a ondragstart="return false;">Edit</a>
-                <a ondragstart="return false;">View</a>
-                <a ondragstart="return false;">Windows</a>
-                <a ondragstart="return false;">Special</a>
-                <a ondragstart="return false;">Help</a>
-            </div>
-            <div class="special" style="width: 128px;align-self: center;text-align:end;padding-right:6px;">5:44 PM</div>
-            <div class="sep"></div>
-            <div class="special" style="width: 85px;border-top-right-radius:10px;align-self: center;">Finder</div>
-        </div>
-        <div id="Main" class="main_border">
-            <div class="titlebar">
-                <div class="button" onclick="history.go(-1)"></div>
-                <div class="title"></div>
-                <span>Course Outline</span>
-                <div class="title"></div>
-                <div class="button" onclick="ToggleDisp()" style="margin-right:5px;">
-                    <div style="height:2px;border-top:1px solid #090909;transform: translate(0%,100%);"></div>
-                </div>
-                <div class="button" onclick="ToggleDisp()">
-                    <div style="height:1px;border-top:1px solid #090909;border-bottom:1px solid #090909;transform: translate(0%,100%);"></div>
-                </div>
-            </div>
-            <div id="Sub" class="sub_border">
-                <table style="border-collapse: collapse;">
-                    <tbody>
-                        <tr>
-                            <td class="highlight_panel">
-                                <img src="/videowelder.xyz/files/projects/OS9/root/logo.png" alt="Litz OS 9.2.2" width="400" height="400" ondragstart="return false;">
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s1" ondragstart="return false;">
-                                            S1 - Introduction to NetBeans and Java
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s2" ondragstart="return false;">
-                                            S2 - String Data
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s3" ondragstart="return false;">
-                                            S3 - Numeric Data
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s4" ondragstart="return false;">
-                                            S4 - Random Numbers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s5" ondragstart="return false;">
-                                            S5 - Decisions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s6" ondragstart="return false;">
-                                            S6 - Loops
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s7" ondragstart="return false;">
-                                            S7 - One-Dimensional Arrays
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s8" ondragstart="return false;">
-                                            S8  - Two-Dimensional Arrays
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="links" href="/videowelder.xyz/projects/system9/s9" ondragstart="return false;">
-                                            S9 - Game Programming using Arrays and Creating a Form Using Code
-                                        </a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="navbar">
+        <a ondragstart="return false;" href="/videowelder.xyz/" class="home" onDragStart="return false;">Home</a>
+        <label>~</label>
+		<span>
+		<p>Projects</p>
+		<a ondragstart="return false;" href="/videowelder.xyz/projects/tonematricks">Matricks</a>
+		<a ondragstart="return false;" href="/videowelder.xyz/projects/darktheme">Theme</a>
+		<a ondragstart="return false;" href="/videowelder.xyz/projects/system9">System9</a>
+		<a ondragstart="return false;" href="/videowelder.xyz/projects/ICS4U">ICS4U</a>
+		<a ondragstart="return false;" href="/videowelder.xyz/projects/utilibot">Utilibot</a>
+		<a ondragstart="return false;" href="/videowelder.xyz/projects/website">Website</a>
+		</span>
+        <a onDragStart="return false;" href="/videowelder.xyz/About">About</a>
     </div>
-    <script>
-        function ToggleDisp() {
-            if (document.getElementById("Sub").style.display != "none") {
-                document.getElementById("Sub").style.display = "none";
-                document.getElementById("Main").style.padding = "4px 4px 0px 4px";
-            } else if (document.getElementById("Sub").style.display == "none") {
-                document.getElementById("Sub").style.display = "block";
-                document.getElementById("Main").style.padding = "4px 4px 4px 4px";
-            }
-        }
-    </script>
+    <div class="main_page">
+        <div class="back">
+            <a onDragStart="return false;" href="/videowelder.xyz/Projects">
+                <svg viewBox="0 0 15 15" style="width:100px; height:100px;">
+                    <defs>
+                        <filter id="Multiply">
+                            <feBlend in="SourceGraphic" mode="screen" />
+                        </filter>
+                    </defs>
+                    <g transform="translate(-197.47366,-247.52292)" style="filter:url(#Multiply);">
+                        <g transform="translate(10.252604,-0.61421131)">
+                            <path d="m 187.22062,255.27261 8.73293,-7.13548 -0.74336,1.92022 -5.23463,5.21526 z" style="fill:#424c69;stroke-width:0.26458332"></path>
+                            <path d="m 187.22062,255.27261 8.73293,7.15202 -0.74336,-1.92022 -5.23463,-5.2318 z" style="fill:#424c69;stroke-width:0.26458332"></path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="section_header">
+            System9
+        </div>
+        <div class="main_text" style="background-color: transparent;">
+            Platforms: Most Browsers
+        </div>
+        <div class="sub_text">
+            <img onDragStart="return false;" width="128" height="128" style="image-rendering: crisp-edges;" src="/videowelder.xyz/files/Projects/Icons/system9.png" alt="System9 Mac Logo">
+            <p>
+                A CSS masterpiece replicating the beautiful UI of Mac OS 9. All of it as of right now is in CSS and in continued development. You can either preview or see the latest source.
+            </p>
+            <div style="display:flex;width:50%;margin:auto;">
+                <a onDragStart="return false;" href="https://videowelder.github.io/System9/">
+                    <span>Preview</span>
+                </a>
+				<a onDragStart="return false;" href="https://github.com/Videowelder/System9">
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
 </body>

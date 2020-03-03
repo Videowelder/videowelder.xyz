@@ -211,8 +211,9 @@ img.close {
         background-image: url("/videowelder.xyz/files/Classic/back-hover.png");
     }
 
-img.bird {
+.bird {
     background: url("/videowelder.xyz/files/Classic/vw_logo.png");
     width: 512px;
     height: 512px;
+    margin: auto;
 }

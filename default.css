@@ -1,0 +1,230 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    cursor: url("/videowelder.xyz/files/mouse.png"), auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+}
+
+@font-face {
+    font-family: GothicBoldItal;
+    src: url(/videowelder.xyz/files/Fonts/gothicbi.ttf);
+}
+
+@font-face {
+    font-family: GothicBold;
+    src: url(/videowelder.xyz/files/Fonts/gothicb.ttf);
+}
+
+html {
+    padding: 3px 3px 3px 3px;
+    background-color: #000;
+    font-size: 11pt;
+    text-align: center;
+    height: 100%;
+    display: table;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#1d4055, #06080a);
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+div.main_text {
+    padding: 4px 8px 4px 8px;
+    color: #FFFFFF;
+    font-size: 100%;
+    font-weight: 100;
+    font-family: GothicBold;
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+	text-shadow: 0px 0px 2px;
+}
+
+p {
+    padding: 5px;
+}
+
+div.sub_text {
+    padding: 4px 8px 4px 8px;
+    color: #FFFFFF;
+    font-size: 100%;
+    font-weight: 100;
+    font-family: GothicBold;
+    font-size: 12pt;
+    text-align: center;
+    text-decoration: none;
+    width: 85%;
+    margin: auto;
+	text-shadow: 0px 0px 0px;
+}
+
+div.sub_text p {
+    font-family: GothicBold;
+    font-size: 10pt;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+div.main_page {
+    position: absolute;
+    display: block;
+    width: 800px;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 50%;
+    top: 50%;
+}
+
+div.section_header {
+    padding: 3px 6px 3px 6px;
+    text-shadow: 0px 0px 2px;
+    color: #FFFFFF;
+    font-family: GothicBold;
+    font-weight: bold;
+    font-size: 333%;
+    text-align: center;
+}
+
+.footer {
+	visibility: hidden;
+}
+
+div.navbar {
+    position: fixed;
+	font-family: GothicBold;
+	color: #fff;
+	background-color: #fff1;
+	width: 75px;
+	height:100%;
+	display: inline-flex;
+	flex-flow: column;
+	left: 0;
+	padding-top:20px;
+}
+
+    div.navbar a {
+		color:#fff;
+        display: inline-block;
+        text-decoration: none;
+        font-style: normal;
+		font-size: 13px;
+        text-align: center;
+        padding: 0px 0px 2px 0px;
+        width: 100%;
+    }
+
+    div.navbar a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+	
+	div.navbar p {
+        background-color: #fff1;
+        border-top: 1px double #fff;
+        border-bottom: 1px double #fff;
+		transition: all .5s;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		color: #fff;
+		font-family: GothicBold;
+		padding: 5px 0px 5px 0px;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	div.navbar span {
+		background-color: #fff1;
+		border-bottom: 1px double #fff;
+	}
+
+.sub_text a {
+	font-family: GothicBoldItal;
+    transition: box-shadow .5s, margin .5s;
+    -moz-transition: box-shadow .5s, margin .5s;
+    -webkit-transition: box-shadow .5s, margin .5s;
+    text-decoration: none;
+    font-style: normal;
+    color: #FFFFFF;
+    border: 2px solid;
+    background: #fff1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+    height: 20px;
+	font-size: 14px;
+}
+
+    .sub_text a span {
+        width: 100%;
+    }
+
+    .sub_text a:hover {
+        text-decoration: none;
+        box-shadow: 1px 1px #fff,2px 2px #fff,3px 3px #fff,4px 4px #fff,5px 5px #fff;
+        margin: -5px 10px 5px 0px !important;
+    }
+
+    .sub_text a.big {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+        .sub_text a.big span {
+            text-align: end;
+            width: 100%;
+            padding-right: 2px;
+        }
+		
+		.sub_text a.big div.icon {
+			width: 35px;
+			height: 35px;
+			border-right: 2px solid #fff;
+			flex-shrink: 0;
+			image-rendering: crisp-edges;
+			background-position: center;
+			filter: brightness(100);
+		}
+
+svg {
+    width: 250px;
+    height: 250px;
+}
+
+g {
+    transition: filter 5s;
+}
+
+    g:hover {
+        filter: brightness(255);
+    }
+
+.back {
+    position: absolute;
+    top: 37%;
+}
+
+.bird {
+    background: url("/videowelder.xyz/files/Bird.svg");
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    margin:auto;
+}
