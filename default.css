@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: GothicBoldItal;
-    src: url(/videowelder.xyz/files/Fonts/gothicbi.ttf);
+    src: url(/videowelder.xyz/files/fonts/gothicbi.ttf);
 }
 
 @font-face {
     font-family: GothicBold;
-    src: url(/videowelder.xyz/files/Fonts/gothicb.ttf);
+    src: url(/videowelder.xyz/files/fonts/gothicb.ttf);
 }
 
 html {
